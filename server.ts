@@ -4,9 +4,14 @@ import { fastifyStatic } from '@fastify/static'
 import { fastifyCors } from '@fastify/cors'
 import path from 'path';
 
+// Importação das rotas
+import { servicosRoutes } from './routes/servicos';
+
 import denuncias from './mocks/denuncias'
 import acoes from './mocks/acoes'
 import categories from './mocks/categories';
+import categoriasServicos from './mocks/categoriasServicos';
+import orgaos from './mocks/orgaos';
 
 const server = Fastify()
 server.register(fastifyCors, {
@@ -37,6 +42,16 @@ server.get("/acoes", (request, reply) => {
 server.get("/categories", (request, reply) => {
     return reply.send(categories)
 })
+
+server.get("/categoriasServicos", (request, reply) =>{
+    return reply.send(categoriasServicos)
+})
+
+server.get("/orgaos", (request, reply) => {
+    return reply.send(orgaos)
+})
+
+server.register(servicosRoutes);
 
 interface UpdateDenunciaParams {
     id: string;

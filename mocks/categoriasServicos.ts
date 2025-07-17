@@ -1,0 +1,21 @@
+export default [
+  { nome: "Solicitação de pagamento" },
+  { nome: "Alteração cadastral" },
+  { nome: "Alvará e Licenças" },
+  { nome: "Assistência social" },
+  { nome: "Blitz Urbana" },
+  { nome: "Trânsito e transporte" },
+  { nome: "Segurança e Cidadania" },
+  { nome: "Cultura" },
+  { nome: "Educação" },
+  { nome: "Meio Ambiente" },
+  { nome: "Obras e serviços públicos" },
+  { nome: "Gestão de pessoas" },
+  { nome: "Fazenda" },
+  { nome: "Saúde" },
+  { nome: "Inovação e tecnologia" },
+  { nome: "Urbanismo e habitação" },
+  { nome: "Contratual" },
+  { nome: "Ofício" },
+  { nome: "Previdência" }
+];
